@@ -3,75 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Structure</title>
-    <link
-      rel="shortcut icon"
-      href="images/house-icon.png"
-      type="image/x-icon"
-    />
-
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+    <style>
+      label {
+        display: block;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div class="first">
-      <p id="one">I am from first</p>
-    </div>
-    <div class="blog">
-      <h1>My first blog</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolore
-        beatae deleniti saepe laboriosam et vitae illo inventore veniam
-        necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing
-        elit. Vero dolore beatae deleniti saepe laboriosam et vitae illo
-        inventore veniam necessitatibus? Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Vero dolore beatae deleniti saepe laboriosam et vitae
-        illo inventore veniam necessitatibus?
-      </p>
-    </div>
-    <div class="blog second">
-      <h1>My second blog</h1>
-      <p class="para-2">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolore
-        beatae deleniti <span class="labor">saepe laboriosam</span> et vitae
-        illo inventore veniam necessitatibus? Lorem ipsum, dolor sit amet
-        consectetur adipisicing elit. Vero dolore beatae deleniti saepe
-        laboriosam et vitae illo inventore veniam necessitatibus? Lorem ipsum,
-        dolor sit amet consectetur adipisicing elit. Vero dolore beatae deleniti
-        saepe laboriosam et vitae illo inventore veniam necessitatibus?
-      </p>
-    </div>
-    <div class="blog">
-      <h1>My third blog</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolore
-        beatae deleniti saepe laboriosam et vitae illo inventore veniam
-        necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing
-        elit. Vero dolore beatae deleniti saepe laboriosam et vitae illo
-        inventore veniam necessitatibus? Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Vero dolore beatae deleniti saepe laboriosam et vitae
-        illo inventore veniam necessitatibus?
-      </p>
-    </div>
-    <div class="blog">
-      <h1>My forth blog</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolore
-        beatae deleniti saepe laboriosam et vitae illo inventore veniam
-        necessitatibus? Lorem ipsum, dolor sit amet consectetur adipisicing
-        elit. Vero dolore beatae deleniti saepe laboriosam et vitae illo
-        inventore veniam necessitatibus? Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Vero dolore beatae deleniti saepe laboriosam et vitae
-        illo inventore veniam necessitatibus?
-      </p>
-    </div>
-    <div>
-      <ol>
-        <li>Content</li>
-        <li>border</li>
-        <li>margin</li>
-        <li>padding</li>
-        <li>width and height</li>
-      </ol>
-    </div>
+    <header>
+      <h1>fill up your form</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name"
+          >Your Name:
+          <input type="text" id="name" placeholder="Your Name" />
+        </label>
+        <label for="email"
+          >Your Email
+          <input type="email" id="email" placeholder="Your Email" />
+        </label>
+        <label for="phone"
+          >Your Phone
+          <input type="text" id="phone" placeholder="Your Phone" />
+        </label>
+        <fieldset>
+          <legend>Pick one Pitha</legend>
+
+          <label><input type="radio" name="pitha" id="vapa" /> Vapa</label>
+          <label><input type="radio" name="pitha" id="chitoi" />Chitoy</label>
+          <label><input type="radio" name="pitha" id="puli" />Puli</label>
+        </fieldset>
+        <fieldset>
+          <legend>Pick one or more vorta</legend>
+          <label>
+            <input type="checkbox" name="vorta" id="sorisa" />Sorisa
+          </label>
+          <label>
+            <input type="checkbox" name="vorta" id="sutki" />Sutki
+          </label>
+          <label><input type="checkbox" name="vorta" id="alu" />Alu</label>
+        </fieldset>
+        <fieldset>
+          <legend>Special instruction</legend>
+          <textarea name="" id="" cols="50" rows="10"></textarea>
+        </fieldset>
+        <input type="reset" value="reset" />
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>

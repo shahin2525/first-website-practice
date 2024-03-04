@@ -1,10 +1,7 @@
-h1 {
-  color: aqua;
+.text-center {
+  text-align: center;
 }
 
-li {
-  color: tomato;
-}
-#place {
-  color: black;
+.text-large {
+  font-size: 50px;
 }
