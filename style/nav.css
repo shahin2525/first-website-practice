@@ -12,3 +12,13 @@ nav li:hover {
 nav a {
   text-decoration: none;
 }
+
+/* nested dropdown */
+nav li .dropdown {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+}
+nav li:hover > .dropdown {
+  display: block;
+}
