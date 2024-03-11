@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+      }
+      .boy {
+        z-index: 10;
+      }
+      .ring {
+        top: -80px;
+        z-index: 5;
+      }
+      .water {
+        top: -150px;
+      }
+      h1::after {
+        content: ".pdf";
+      }
+      h1::before {
+        content: ".start";
+      }
+      p::first-line {
+        font-size: 30px;
+      }
+      p::first-letter {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-index</h1>
+    <div class="container">
+      <div class="box boy"><img src="images/boy.svg" alt="" /></div>
+      <div class="box ring"><img src="images/ring.svg" alt="" /></div>
+      <div class="box water"><img src="images/water.svg" alt="" /></div>
+    </div>
+    <div>
+      <h1>rat</h1>
+      <h1>din</h1>
+      <h1>dupur</h1>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+      quibusdam at iure, reprehenderit repellat nemo tenetur molestiae, nulla
+      nihil quod vero beatae voluptates ipsum sed cum optio numquam voluptate,
+      quo nobis amet necessitatibus exercitationem? Minima dolor totam
+      repellendus eligendi ex necessitatibus asperiores reiciendis obcaecati
+      aliquam commodi! Enim perferendis deserunt cum.
+    </p>
+    <p>
+      Laborum accusantium amet officiis ab, magni laudantium odio velit itaque.
+      Numquam atque possimus dolores consequuntur quos ducimus assumenda
+      repellendus at odit expedita qui optio totam, nihil ipsa. Quis est aliquam
+      accusantium aut corporis itaque eos? Ut reiciendis ex enim quis harum,
+      explicabo rem, at ullam provident assumenda voluptatum facilis veniam.
+    </p>
+    <p>
+      A ex esse voluptatibus aut ut odio corporis numquam? Nemo necessitatibus
+      esse nobis nesciunt dolor debitis voluptatem, aperiam, sequi expedita
+      beatae commodi adipisci deserunt similique distinctio ipsam quasi optio
+      vel sed voluptatibus ex. Eaque nulla deleniti laboriosam corrupti beatae
+      accusamus officiis, alias ad, molestias itaque amet rem. Nostrum, debitis
+      quas.
+    </p>
+  </body>
+</html>
