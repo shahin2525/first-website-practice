@@ -5,63 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      label {
-        display: block;
-        margin: 10px;
+      nav {
+        display: flex;
+        justify-content: space-between;
       }
     </style>
-    <link rel="stylesheet" href="style/nav.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="dom.html">Dom</a></li>
-          <li><a href="first.html">First</a></li>
-          <li><a href="five.html">Five</a></li>
-          <li><a href="list.html">List</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form>
-        <label for="name"
-          >Your Name:
-          <input type="text" id="name" placeholder="Your Name" />
-        </label>
-        <label for="email"
-          >Your Email
-          <input type="email" id="email" placeholder="Your Email" />
-        </label>
-        <label for="phone"
-          >Your Phone
-          <input type="text" id="phone" placeholder="Your Phone" />
-        </label>
-        <fieldset>
-          <legend>Pick one Pitha</legend>
-
-          <label><input type="radio" name="pitha" id="vapa" /> Vapa</label>
-          <label><input type="radio" name="pitha" id="chitoi" />Chitoy</label>
-          <label><input type="radio" name="pitha" id="puli" />Puli</label>
-        </fieldset>
-        <fieldset>
-          <legend>Pick one or more vorta</legend>
-          <label>
-            <input type="checkbox" name="vorta" id="sorisa" />Sorisa
-          </label>
-          <label>
-            <input type="checkbox" name="vorta" id="sutki" />Sutki
-          </label>
-          <label><input type="checkbox" name="vorta" id="alu" />Alu</label>
-        </fieldset>
-        <fieldset>
-          <legend>Special instruction</legend>
-          <textarea name="" id="" cols="50" rows="10"></textarea>
-        </fieldset>
-        <input type="reset" value="reset" />
-        <input type="submit" value="submit" />
-      </form>
-    </main>
-    <footer></footer>
+    <nav>
+      <div><a href="">Home</a><a href="">Profile</a><a href="">Blog</a></div>
+      <div>
+        <a href="">Login</a>
+      </div>
+    </nav>
   </body>
 </html>
