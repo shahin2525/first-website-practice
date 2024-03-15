@@ -9,6 +9,21 @@
         display: flex;
         justify-content: space-between;
       }
+      nav a {
+        text-decoration: none;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      form input {
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
@@ -18,5 +33,13 @@
         <a href="">Login</a>
       </div>
     </nav>
+    <section>
+      <form>
+        <h1>Please Login</h1>
+        <input type="email" placeholder="Your Email" />
+        <input type="password" placeholder="Your Password" />
+        <input type="submit" value="Login" />
+      </form>
+    </section>
   </body>
 </html>
