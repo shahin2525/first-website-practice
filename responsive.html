@@ -3,15 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive</title>
-    <style></style>
+    <title>Responsive img</title>
+    <style>
+      body {
+        border: 1px solid blue;
+        height: 100vh;
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      .img-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .img-container div {
+        width: 100%;
+      }
+      .img-container img {
+        width: 50%;
+        background-color: aqua;
+      }
+      @media screen and (max-width: 576px) {
+        .img-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .img-container img {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 972px) {
+        .img-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .img-container img {
+          width: 70%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <section>
-      <div>
-        <img src="/images/boy.svg" alt="" />
-        <img src="/images/ring.svg" alt="" />
+    <header>
+      <h1>Responsive</h1>
+    </header>
+    <main>
+      <div class="img-container">
+        <div><img src="/images/boy.svg" alt="" /></div>
+        <div><img src="/images/ring.svg" alt="" /></div>
+        <div><img src="/images/water.svg" alt="" /></div>
+        <div><img src="/images/boy.svg" alt="" /></div>
+        <div><img src="/images/ring.svg" alt="" /></div>
+        <div><img src="/images/water.svg" alt="" /></div>
+        <div><img src="/images/boy.svg" alt="" /></div>
+        <div><img src="/images/ring.svg" alt="" /></div>
       </div>
-    </section>
+    </main>
   </body>
 </html>
