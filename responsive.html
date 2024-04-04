@@ -3,64 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive img</title>
+    <title>Document</title>
     <style>
-      body {
-        border: 1px solid blue;
-        height: 100vh;
-        max-width: 1120px;
-        margin: 0 auto;
+      .container {
+        display: flex;
+        gap: 10px;
       }
-      h1 {
+      .box {
+        background-color: green;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .item {
+        background-color: aquamarine;
+        border: 2px solid tomato;
+        border-radius: 5px;
+        height: 100px;
+        width: 100px;
         text-align: center;
-      }
-      .img-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-      }
-      .img-container div {
-        width: 100%;
-        height: 25px;
-      }
-      .img-container img {
-        width: 60%;
-        background-color: aqua;
+        line-height: 100px;
       }
       @media screen and (max-width: 576px) {
-        .img-container {
-          grid-template-columns: repeat(1, 1fr);
-        }
-        .img-container img {
-          width: 100%;
-          height: 25px;
-        }
-      }
-      @media screen and (min-width: 576px) and (max-width: 972px) {
-        .img-container {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .img-container img {
-          width: 70%;
+        .container {
+          flex-direction: column;
+          font-size: larger;
         }
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Responsive</h1>
-    </header>
-    <main>
-      <div class="img-container">
-        <div><img src="/images/boy.svg" alt="" /></div>
-        <div><img src="/images/ring.svg" alt="" /></div>
-        <div><img src="/images/water.svg" alt="" /></div>
-        <div><img src="/images/boy.svg" alt="" /></div>
-        <div><img src="/images/ring.svg" alt="" /></div>
-        <div><img src="/images/water.svg" alt="" /></div>
-        <div><img src="/images/boy.svg" alt="" /></div>
-        <div><img src="/images/ring.svg" alt="" /></div>
+    <h1>responsive</h1>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        nobis necessitatibus id aliquam odio dicta, aspernatur cupiditate ipsa
+        nemo numquam earum velit molestias non minus temporibus ea distinctio
+        quod ipsum sapiente at assumenda reprehenderit doloremque! Voluptas
+        corrupti nam nisi sed quis, voluptatibus laboriosam quas provident
+        debitis quae ea fugiat! Animi.
       </div>
-    </main>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt
+        nulla officiis iste inventore, quod similique ipsam. Sunt quibusdam
+        aliquid molestias voluptatibus laudantium voluptatem, culpa incidunt
+        assumenda quas placeat perspiciatis dolor quam vero nisi tenetur ullam
+        magni eum voluptate velit aspernatur odio ducimus itaque officiis quos?
+        Eos quas dicta similique!
+      </div>
+    </div>
+    <div class="container2">
+      <div class="item">item-1</div>
+      <div class="item">item-2</div>
+      <div class="item">item-3</div>
+      <div class="item">item-4</div>
+      <div class="item">item-5</div>
+      <div class="item">item-6</div>
+      <div class="item">item-7</div>
+      <div class="item">item-8</div>
+      <div class="item">item-9</div>
+      <div class="item">item-10</div>
+    </div>
   </body>
 </html>
