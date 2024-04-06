@@ -3,30 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Grid</title>
     <style>
       .container {
         display: grid;
-        grid-template-columns: repeat(4, 2fr) 2fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px) 50px 50px;
+        gap: 10px;
       }
-      .item {
-        border: 1px solid aquamarine;
+      .box {
+        background-color: gray;
+      }
+      #box-1 {
+        grid-row: span 5;
+      }
+      #box-11,
+      #box-12 {
+        grid-column: span 3;
       }
     </style>
   </head>
   <body>
-    <h1>Grid template</h1>
     <div class="container">
-      <div class="item">item-1</div>
-      <div class="item">item-2</div>
-      <div class="item">item-3</div>
-      <div class="item">item-4</div>
-      <div class="item">item-5</div>
-      <div class="item">item-6</div>
-      <div class="item">item-7</div>
-      <div class="item">item-8</div>
-      <div class="item">item-9</div>
-      <div class="item">item-10</div>
+      <div class="box" id="box-1">box-1</div>
+      <div class="box" id="box-2">box-2</div>
+      <div class="box" id="box-3">box-3</div>
+      <div class="box" id="box-4">box-4</div>
+      <div class="box" id="box-5">box-5</div>
+      <div class="box" id="box-6">box-6</div>
+      <div class="box" id="box-7">box-7</div>
+      <div class="box" id="box-8">box-8</div>
+      <div class="box" id="box-9">box-9</div>
+      <div class="box" id="box-10">box-10</div>
+      <div class="box" id="box-11">box-11</div>
+      <div class="box" id="box-12">box-12</div>
     </div>
   </body>
 </html>
