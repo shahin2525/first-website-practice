@@ -3,11 +3,30 @@
   box-shadow: 10px 10px 10px burlywood;
   margin: 20px;
 }
-.header {
+
+/* .header {
   margin: 20px;
   /* background-image: url("/images/ring.svg"); */
-  background-image: url("../images/macbook.jpg");
+/* background-image: url("../images/macbook.jpg");
 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+nav ul {
+  display: flex;
+}
+nav li .dropdown {
+  display: none;
+  position: absolute;
+  background-color: azure;
+  padding-left: 10px;
+}
+nav li {
+  margin: 20px;
+}
+nav li:hover > .dropdown {
+  display: block;
+}
+
+nav li {
+  list-style: none;
 }
